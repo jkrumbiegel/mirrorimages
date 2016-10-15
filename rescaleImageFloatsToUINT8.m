@@ -1,6 +1,6 @@
 function out = rescaleImageFloatsToUINT8(im)
 
-if size(im) == 2
+if ndims(im) == 2
     maximum = max(max(im));
     minimum = min(min(im));
 elseif size(im) == 3
